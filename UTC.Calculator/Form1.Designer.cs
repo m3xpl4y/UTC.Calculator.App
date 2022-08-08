@@ -28,12 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_calc = new System.Windows.Forms.Button();
+            this.lbl_result = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 12);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(265, 12);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(228, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "UTC:";
+            // 
+            // btn_calc
+            // 
+            this.btn_calc.Location = new System.Drawing.Point(13, 43);
+            this.btn_calc.Name = "btn_calc";
+            this.btn_calc.Size = new System.Drawing.Size(199, 24);
+            this.btn_calc.TabIndex = 3;
+            this.btn_calc.Text = "Calculate UTC";
+            this.btn_calc.UseVisualStyleBackColor = true;
+            // 
+            // lbl_result
+            // 
+            this.lbl_result.AutoSize = true;
+            this.lbl_result.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_result.Location = new System.Drawing.Point(13, 70);
+            this.lbl_result.Name = "lbl_result";
+            this.lbl_result.Size = new System.Drawing.Size(96, 40);
+            this.lbl_result.TabIndex = 4;
+            this.lbl_result.Text = "label2";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(409, 197);
+            this.Controls.Add(this.lbl_result);
+            this.Controls.Add(this.btn_calc);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.MaximizeBox = false;
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private DateTimePicker dateTimePicker1;
+        private ComboBox comboBox1;
+        private Label label1;
+        private Button btn_calc;
+        private Label lbl_result;
     }
 }

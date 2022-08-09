@@ -9,6 +9,7 @@ namespace UTC.Calculator
             InitializeComponent();
             lbl_result.Text = string.Empty;
             btnCloseInfo.Visible = false;
+            aboutInfoForm1.Visible = false;
             SetDateTimePicker();
             InitializeUtc();
         }
@@ -57,25 +58,27 @@ namespace UTC.Calculator
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dateTimePicker1.Visible = false;
-            label1.Visible = false;
+            utcLabel.Visible = false;
             btnCopy.Visible = false;
             btn_calc.Visible = false;
             btnReset.Visible = false;
             lbl_result.Visible = false;
             comboBox1.Visible = false;
             btnCloseInfo.Visible = true;
+            aboutInfoForm1.Visible = true;
         }
 
         private void btnCloseInfo_Click(object sender, EventArgs e)
         {
             dateTimePicker1.Visible = true;
-            label1.Visible = true;
+            utcLabel.Visible = true;
             btnCopy.Visible = false;
             btn_calc.Visible = true;
             btnReset.Visible = true;
             lbl_result.Visible = false;
             comboBox1.Visible = true;
             btnCloseInfo.Visible = false;
+            aboutInfoForm1.Visible= false;
         }
     }
 }

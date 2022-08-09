@@ -18,7 +18,7 @@
         {
             var value = GetUtc();
             var result = _dateTime.AddHours(value.Hours);
-            result.AddMinutes(value.Minutes);
+            result = result.AddMinutes(value.Minutes);
             return result;
         }
     }
